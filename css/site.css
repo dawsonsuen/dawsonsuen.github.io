@@ -44,3 +44,6 @@
     margin: 0;
     line-height: 50px;
 }
+.profile-card__body .row .col h4 span{
+    color: #29c374;
+}
