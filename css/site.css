@@ -1,3 +1,32 @@
+.container{
+    height: 912px;
+    padding-top: 15px;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    overflow: hidden;
+    -webkit-perspective: 1500px;
+    -moz-perspective: 1500px;
+    perspective: 1500px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: #424242;
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.6em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: url(../images/main_bg.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 .padding{
     padding: 20px;
 }
@@ -5,6 +34,7 @@
     padding: 45px;
 }
 .profile-card{
+    
     position: relative;
     background-color: #fff;
     overflow: hidden;
@@ -90,4 +120,171 @@
 .profile-card__body .row .col h4 span{
     color: #29c374;
 }
-
+.header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    z-index: 2;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .header * {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .header .header-content {
+    max-width: 1032px;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (min-width: 991px) {
+    .header.sticked {
+      background-color: #fff;
+      height: 60px;
+      -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+      -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+      box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    }
+  }
+  
+  .site-title-block {
+    position: relative;
+    float:left;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .site-title {
+    color: #49515d;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    line-height: 1;
+    margin: 38px 0 0;
+  }
+  
+  .site-title span {
+    color: #2eca7f;
+  }
+  
+  .header.sticked .site-title {
+    margin-top: 18px;
+  }
+  
+  .site-main {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  /* Main menu */
+  .site-nav {
+    float: right;
+  }
+  .site-main-menu {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .site-main-menu li {
+    display: inline-block;
+    float: left;
+    position: relative;
+    padding: 0;
+    text-align: center;
+    margin-top: 33px;
+  }
+  
+  @media only screen and (min-width: 991px) {
+    .header.sticked .site-main-menu li {
+      margin-top: 13px;
+    }
+  }
+  
+  .site-main-menu li a,
+  .site-main-menu li a:hover {
+    display: block;
+    position: relative;
+    padding: 8px 0;
+    margin: 0 20px;
+    text-align: center;
+    color: #49515d;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    opacity: 0.6;
+  }
+  
+  .site-main-menu li:last-child a {
+    margin-right: 0;
+  }
+  
+  .site-main-menu li a:hover,
+  .site-main-menu li.active a {
+    background-color: transparent;
+    opacity: 1;
+  }
+  
+  .site-main-menu li a:after {
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 0;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #2eca7f;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .site-main-menu li a:hover:after,
+  .site-main-menu li.active a:after {
+    width: 25px;
+  }
+  
+  .menu-icon {
+    display: block;
+    font-size: 21px;
+    margin-bottom: 3px;
+    text-align: center;
+  }
+  /* /Main menu */
+  
+  /* Mobile menu toggle */
+  .menu-toggle {
+    display: block;
+    width: 50px;
+    margin: 0 4px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    float: right;
+  }
+  
+  .menu-toggle i {
+    color: #fff;
+    font-size: 21px;
+    line-height: 50px;
+  }
+  /* /Mobile menu toggle */

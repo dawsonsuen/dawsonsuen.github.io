@@ -4,27 +4,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/animate.css">
+
 <script type="text/javascript" src="app.js"></script>
     <title>Dongchen Sun</title>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 class="text-left">Dongchen Sun</h1>
+<body class="material">
+    <!-- Loading animation -->
+	<div class="preloader">
+            <div class="preloader-animation">
+                <div class="preloader-spinner">
                 </div>
             </div>
         </div>
-    </header>
-    <section class="container">
+    <!-- /Loading animation -->
+
+
+
+    <div id='page' class='page'>
+    
+            <header id="site_header" class="header mobile-menu-hide">
+                    <div class="header-content">
+                        <div class="site-title-block mobile-hidden">
+                            <div class="site-title">Dongchen <span>Sun</span></div>
+                        </div>
+        
+                        <!-- Navigation -->
+                        <div class="site-nav">
+                            <!-- Main menu -->
+                            <ul id="nav" class="site-main-menu">
+                                <li>
+                                    <a class="pt-trigger" href="#home" data-animation="62">Home</a><!-- href value = data-id without # of .pt-page. -->
+                                </li>
+                                <li>
+                                    <a class="pt-trigger" href="#resume" data-animation="62">Resume</a>
+                                </li>
+                                <li>
+                                    <a class="pt-trigger" href="#services" data-animation="62">Services</a>
+                                </li>
+                                <li>
+                                    <a class="pt-trigger" href="#blog" data-animation="62">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="pt-trigger" href="#contact" data-animation="62">Contact</a>
+                                </li>
+                            </ul>
+                            <!-- /Main menu -->
+                        </div>
+                        <!-- Navigation -->
+                    </div>
+                </header>
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    <section class="container" style="height: 639px;">
+        
         <div class="profile-card">
             <div class="profile-card__header padding">
                 <div class="row">
                     <div class="col">
                         <div class="profile-card__photo--wrapper">
-                           <img src="./images/photo.png" alt="Dongchen Sun">
+                           <img src="images/photo.png" alt="Dongchen Sun">
                         </div>
                     </div>
                     <div class="col">
@@ -114,5 +162,6 @@
         </div>
     </section>
     <footer></footer>
+</div>
 </body>
 </html>
