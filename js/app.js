@@ -265,7 +265,7 @@ $(document).on('ready', function() {
 	//Google Maps
 	$("#map").googleMap();
 	$("#map").addMarker({
-		address: "Level 3 / 57 Coronation Drive, Brisbane"
+		address: "29/Divlin Street, Ryde, NSW 2112"
 	});
 });
 
