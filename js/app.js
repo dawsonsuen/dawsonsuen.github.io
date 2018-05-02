@@ -262,11 +262,7 @@ $(document).on('ready', function() {
 		}
 	});
 
-	//Google Maps
-	$("#map").googleMap();
-	$("#map").addMarker({
-		address: "29/Divlin Street, Ryde, NSW 2112"
-	});
+	
 });
 
 })(jQuery);
